@@ -12,9 +12,9 @@
 
 ### Modelagem do banco de dados
 
-- O presente repositório se refere à tabela Book
+- O presente repositório se refere à tabela Autor
   
-  ![Image](./public/images/db-base.JPG)
+
 
 ### Como executar o projeto
 - Você precisa ter instalada em sua máquina a versão 16.14.0 do NodeJS;
@@ -25,7 +25,7 @@
 -  Instale as dependências
      ```js
      npm install
-- Crie um arquivo `.env` na pasta raiz do projeto, copie o conteúdo de `.env.example`, e coloque a porta de sua preferência (exceto 3001)
+
 - Inicie o projeto
    ```js
    npm run dev
@@ -58,23 +58,7 @@
 - DELETE:
   - /books/<id> (Deleta um livro do banco de dados. Deve passar o id do livro como parâmetro)
 
-### Exemplos de endpoints
-- Endpoint da requisição do cadastro de um novo livro:
-  ```js
-  {
-	"id": "f4d8510a-9e5b-40a4-9e38-8aea2917a2be",
-	"title": "sample Book 8",
-	"author_id": "54mpl33",
-	"language": "Spanish",
-	"num_pages": 20,
-	"publication_date": "1927-12-12T00:00:00.000Z",
-	"publisher": "Penguin Books"
-  }
-- Endpoint de tentativa de cadastro de livro com título que já existe:
-  ```js
-  {
-	"error": "This book already exists on our database"
-  }
+
 ### Testes
 - Para rodar os testes automatizados, execute no terminal:
 
@@ -87,7 +71,7 @@
 ![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=Sequelize&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
-![Jest](https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white)
+
 
 - NodeJS
 - Express
@@ -96,7 +80,4 @@
 - Insomnia
 - Beekeeper
 
-- Bibliotecas: 
-  - Joi (validação de campos)
-  - Jest e Supertest (testes de rotas)
-  - uuid (geração de ids automáticos)
+

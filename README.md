@@ -21,10 +21,13 @@
 - Faça clone do seguinte repositório:
  
     ```js
-    git clone https://github.com/carollyb/api-bookstore.git
+    git clone https://github.com/Artur-Moretti/API---Biblioteca---Autor.git
 -  Instale as dependências
      ```js
-     npm install
+   npm i express
+   npm i uuid
+   npm i sqlite3
+   npm i sequelize
 
 - Inicie o projeto
    ```js
@@ -42,26 +45,15 @@
 
 ### Estrutura da API: rotas possíveis
 
-- POST: 
-  - /books (Cria um cadastro de um novo livro. Deve passar o objeto no corpo da requisição. O id não é necessário pois é gerado automaticamente através da biblioteca uuid)
+- POST: /autor (Cria um novo cadastro de um autor, não é necesssário passar o id pois o mesmo é gerado automaticamente)
   
 - GET:  /autor (Lista todos os autores cadastrados)
         /autor/:id (Lista o autor identificado pelo id)
 
-- PUT: /autor/:id (Atualiza todos os atributos de um autor cadastrado. Deve passar o objeto com todos os atributos no corpo da requisição, com exceção do id, que não deve ser alterado manualmente)
+- PUT: /autor/:id (Atualiza todos os atributos de um autor cadastrado. Deve ser passado o objeto com todos os atributos no corpo da requisição, usando o id como parâmetro)
 
-- PATCH: 
-  - /books/<id> (Atualiza um título de um livro cadastrado. Deve passar o atributo no corpo da requisição, e o id como parâmetro)
+- DELETE: /autor/:id (Deleta um autor do banco de dados, é necessário passar o id como parâmetro)
 
-- DELETE:
-  - /books/<id> (Deleta um livro do banco de dados. Deve passar o id do livro como parâmetro)
-
-
-### Testes
-- Para rodar os testes automatizados, execute no terminal:
-
-  ```js
-  npm run test
 ### Tecnologias utilizadas
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)

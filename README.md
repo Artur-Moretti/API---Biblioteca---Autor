@@ -45,12 +45,10 @@
 - POST: 
   - /books (Cria um cadastro de um novo livro. Deve passar o objeto no corpo da requisição. O id não é necessário pois é gerado automaticamente através da biblioteca uuid)
   
-- GET: 
-  - /books (Lista todos os títulos cadastrados)
-  - /books/<título> (Lista títulos que sejam semelhantes ou iguais ao título passado como parâmetro)
+- GET:  /autor (Lista todos os autores cadastrados)
+        /autor/:id (Lista o autor identificado pelo id)
 
-- PUT:
-  - /books/<id> (Atualiza todos os atributos de um livro cadastrado. Deve passar o objeto com todos os atributos no corpo da requisição, com exceção do id, que não deve ser alterado manualmente)
+- PUT: /autor/:id (Atualiza todos os atributos de um autor cadastrado. Deve passar o objeto com todos os atributos no corpo da requisição, com exceção do id, que não deve ser alterado manualmente)
 
 - PATCH: 
   - /books/<id> (Atualiza um título de um livro cadastrado. Deve passar o atributo no corpo da requisição, e o id como parâmetro)
@@ -73,11 +71,5 @@
 ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
 
 
-- NodeJS
-- Express
-- Sequelize ORM
-- JavaScript
-- Insomnia
-- Beekeeper
 
 
